@@ -1,0 +1,36 @@
+.encabezado {
+	width: 100%;
+	padding: 0.5em 1em;
+	background-color: #fafbfd;
+
+	.titulo_encabezado {
+		width: 100%;
+		@include display_flex(row, center, flex-start, nowrap);
+	}
+	.barra_lateral {
+		ul {
+			width: 100%;
+			height: 15vh;
+			@include display_flex(row, center, flex-start, wrap);
+			& > li + li {
+				margin-top: 0;
+			}
+			li {
+				flex-basis: 33%;
+				a {
+					padding: 0.5rem;
+					@include display_flex(row, center, center, nowrap);
+				}
+			}
+		}
+	}
+	@media screen and(min-width:50rem) {
+		min-height: 100vh;
+		.barra_lateral ul {
+			display: block;
+			& > li + li {
+				margin-top: 2rem;
+			}
+		}
+	}
+}

@@ -1,0 +1,22 @@
+#root {
+	width: 100%;
+	* + * {
+		margin-top: 1.5rem;
+	}
+	@import "./encabezado/encabezado";
+	.contenido {
+		width: 100%;
+		@import "./Buttons/buttons";
+		@import "./pie_pagina/pie_pagina";
+	}
+
+	@media screen and(min-width:50rem) {
+		@include display_flex(row, flex-start, stretch, nowrap);
+		.encabezado {
+			flex-basis: 25%;
+		}
+		#buttons {
+			flex-basis: 75%;
+		}
+	}
+}

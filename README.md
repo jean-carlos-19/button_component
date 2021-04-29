@@ -1,70 +1,106 @@
-# Getting Started with Create React App
+<main>
+<section>
+    <h1 align="center"> Button Component Master </h1>
+</section>
+ <section>
+    <h3 align="center"> Solución para un desafío de <a href="https://devchallenges.io/">Devchallenges.io</a> </h3>
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+<section align="left">
+     <h2> Tabla de Contenido </h2>
+</section>
+<nav>
+    <ul>
+        <li><a href="">Descripciòn General</a></li>
+        <li><a href="">Soluciòn</a></li>
+        <li><a href="">Construido Con</a></li>
+        <li><a href="">Caracteristicas</a></li>
+        <li><a href="">Como usuar</a></li>
+        <li><a href="">Contacto</a></li>    
+    </ul>
+</nav>
+<section >
+    <section>
+        <h2 > Descripciòn General </h2>
+    </section>
+    <section >
+         <img align="center"  width="100%" heigth="50vh" src="./src/img/capturas/escritorio.png" alt="figura del sitio web en version escritorio">
+    <section>
+   
+</section>
 
-## Available Scripts
+</section>
+    <section >
+    <h2> Soluciòn </h2>
+    <nav>
+        <ul align="center">
+            <h3>
+                <a href="">Demo</a><span> | </span>
+                <a href="">Github </a><span> | </span>
+                <a href="">Devchallenge</a> </a><span> | </span>
+                <a href="">Figma<a>
+            </h3>
+        </ul>
+    </nav>
+</section>
 
-In the project directory, you can run:
-
-### `yarn start`
-
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
-
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
-
-### `yarn test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `yarn build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `yarn eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `yarn build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+<section >
+    <section>
+        <h2> Construido Con </h2>
+    </section>
+    <nav>
+        <ul>
+            <li>React</li>
+            <li>
+                Preprocesadores
+                <ul>
+                    <li>SASS</li>
+                </ul>
+            </li>
+        </ul>
+    </nav>
+</section>
+<section >
+    <h2> Caracteristicas </h2>
+    <p>
+        Esta aplicación o sitio fue creada como una presentación a un desafío de <a href="http://devchallenges.io" target="_blank">Devchallenges.io</a>. El reto consistía en construir una aplicación para completar las historias de usuario dadas.
+    </p>
+     <p>
+         Desafío: cree un botón reutilizable con todos los estados del diseño y una página que muestre todos los estados. Puedes trabajar en el mismo proyecto con otros design systemdesafíos. Utilice bibliotecas de front-end como React o Vue. No mire la solución existente. Cumplir con las historias de usuario a continuación:
+     </p>
+     <nav>.
+        <ul>
+            <li>Historia de usuario: puedo ver diferentes tipos de botones: default, outlineytext</li> 
+            <li>Historia de usuario: puedo optar por deshabilitarbox-shadow</li>
+            <li>Historia de usuario: puedo optar por desactivar el botón</li>
+            <li>Historia de usuario: puedo elegir tener un ícono a la izquierda o a la derecha (usar el ícono de Google y al menos 5 variantes)</li>
+            <li> Historia de usuario: puedo tener diferentes tamaños de botones </li>
+            <li>Historia de usuario: puedo tener diferentes colores</li>
+            <li>Historia de usuario: cuando me desplazo o me enfoco, puedo ver indicadores visuales</li>
+            <li>Historia de usuario: todavía puedo acceder a todos los atributos de los botones</li>
+            <li>Historia de usuario (opcional): muestra el botón de forma similar al diseño o usa Storybook . De lo contrario, mostrar el botón en varios estados es suficiente</li>
+        </ul>
+    </nav>
+</section>
+<section >
+     <section>
+        <h2> Como usar </h2>
+    </section>
+    <nav>
+        <ul>
+                <li>Github <a href="https://github.com/jean-carlos-19">@jean-carlos-19</a></li>
+                <li>Twitter <a href="https://twitter.com/PiguaveJean">@PiguaveJean</a></li>
+        </ul>
+    </nav>
+</section>
+<section >
+     <section>
+        <h2> Contacto </h2>
+    </section>
+    <nav>
+        <ul>
+                <li>Github <a href="https://github.com/jean-carlos-19">@jean-carlos-19</a></li>
+                <li>Twitter <a href="https://twitter.com/PiguaveJean">@PiguaveJean</a></li>
+        </ul>
+    </nav>
+</section>
+</main>

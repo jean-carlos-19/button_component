@@ -1,0 +1,11 @@
+.pie_pagina {
+	padding: 2em;
+	@include display_flex(row, center, center, nowrap);
+	span {
+		font-size: 1rem;
+
+		a {
+			color: #333333;
+		}
+	}
+}
