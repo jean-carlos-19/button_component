@@ -63,7 +63,15 @@
 	width: 81px;
 }
 .largo {
+	width: 100px;
 }
 .fila {
 	@include display_flex(row, space-between, center, nowrap);
+}
+.derecha {
+	@include display_flex(row-reverse, space-between, center, nowrap);
+}
+.foco {
+	font-weight: bolder;
+	font-size: 1.2rem;
 }

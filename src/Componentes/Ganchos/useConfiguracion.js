@@ -1,9 +1,9 @@
 import { useState, useEffect } from "react";
-const useConfiguracion = (radio_horientacion, radio_shadow) => {
+const useConfiguracion = (estadoConfiguracion = f => f) => {
 	const [horientacion, establecerHorientacion] = useState(undefined);
 	const [shadow, establecerShadow] = useState(undefined);
 	useEffect(() => {
-		horientacion === undefined && shadow === undefined ? establecerEstados("fila", true) : enviarDatos();
+		horientacion === undefined && shadow === undefined ? establecerEstados("izquierda", "habilitado") : enviarDatos();
 	}, [horientacion, shadow]);
 
 	const establecerEstados = (direccion, degradado) => {
@@ -11,20 +11,18 @@ const useConfiguracion = (radio_horientacion, radio_shadow) => {
 		establecerShadow(degradado);
 	};
 	const enviarDatos = () => {
-		console.log("datos enviados");
+		estadoConfiguracion({ horientacion: horientacion, shadow: shadow });
 	};
-	const eventoHorientacion = () => {
-		const valor = radio_horientacion.current.value;
-		if (valor === "derecha") establecerHorientacion("contrario");
-		if (valor === "izquierda") establecerHorientacion("fila");
-		console.log(valor);
+	const eventoHorientacion = evento => {
+		const valor = evento.currentTarget.value;
+		if (valor === "derecha") establecerHorientacion("derecha");
+		if (valor === "izquierda") establecerHorientacion("izquierda");
 	};
-	const eventoShadow = () => {
-		const valor = radio_shadow.current.value;
-		if (valor === "habilitado") establecerShadow(true);
-		if (valor === "desabilitado") establecerShadow(!shadow);
-		console.log(valor);
+	const eventoShadow = evento => {
+		const valor = evento.currentTarget.value;
+		if (valor === "habilitado") establecerShadow("habilitado");
+		if (valor === "desabilitado") establecerShadow("desabilitado");
 	};
-	return { eventoHorientacion, eventoShadow };
+	return { horientacion, shadow, eventoHorientacion, eventoShadow };
 };
 export { useConfiguracion };

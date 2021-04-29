@@ -9,6 +9,7 @@ function Footer({ url_creador = "", nombre_creador = "", url_devchallenges = "",
 				<Link to={{ pathname: { url_creador } }} target='_blank'>
 					{nombre_creador}
 				</Link>
+				-
 				<Link to={{ pathname: { url_devchallenges } }} target='_blank'>
 					{nombre_devchallenges}
 				</Link>

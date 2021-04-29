@@ -5,19 +5,22 @@ import { Contenedor_Botones, Configuracion } from "../Componentes/Comunes";
 import { info_boton } from "../Constantes";
 
 function Botones() {
-	const [horientacion] = useState("fila");
-	//const [shadow] = useState("fila");
+	const [estado, establecerEstado] = useState({ horientacion: "izquierda", shadow: "habilitado" });
+
+	const estadoConfiguracion = ({ horientacion, shadow }) => {
+		establecerEstado(Object.assign({}, estado, { horientacion, shadow }));
+	};
 
 	const { normal, focus, shadow, desabilitado, icono, dimensiones, color, color_hover } = info_boton;
 	return (
 		<section id='buttons'>
-			<Configuracion />
+			<Configuracion estadoConfiguracion={estadoConfiguracion} />
 			<Encabezado titulo='buttons' classCss='izquierdo' />
-			<div className={horientacion}>
+			<div className={"fila"}>
 				<Contenedor_Botones botones={normal} />
 				<Contenedor_Botones botones={focus} />
 			</div>
-			<div className={horientacion}>
+			<div className={"fila"}>
 				<Contenedor_Botones botones={shadow} />
 			</div>
 			<div className='basico'>

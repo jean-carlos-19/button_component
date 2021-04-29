@@ -1,13 +1,27 @@
-import React from "react";
+import React, { useEffect,useState } from "react";
 import PropTypes from "prop-types";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 function Barra_Navegacion_Lateral({ items }) {
+	const ubicacion = useLocation();
+	const [ruta_actual, establecerRutaActual] = useState(ubicacion.pathname);
+
+	useEffect(() => {
+		const ruta = ubicacion.pathname;
+		establecerRutaActual(ruta);
+	}, [ubicacion.pathname]);
 	return (
 		<nav className='barra_lateral'>
 			<ul>
 				{items.map((item, posicion) => (
 					<li key={posicion}>
-						<Link to={item.direccion}> {item.nombre} </Link>
+						{ruta_actual === item.direccion ? (
+							<Link className='foco' to={item.direccion}>
+								{" "}
+								{item.nombre}{" "}
+							</Link>
+						) : (
+							<Link to={item.direccion}> {item.nombre} </Link>
+						)}
 					</li>
 				))}
 			</ul>
