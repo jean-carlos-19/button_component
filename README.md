@@ -34,10 +34,10 @@
     <nav>
         <ul align="center">
             <h3>
-                <a href="">Demo</a><span> | </span>
-                <a href="">Github </a><span> | </span>
-                <a href="">Devchallenge</a> </a><span> | </span>
-                <a href="">Figma<a>
+                <a href="https://button-component.onrender.com/">Demo</a><span> | </span>
+                <a href="https://github.com/jean-carlos-19/button_component">Github </a><span> | </span>
+                <a href="https://devchallenges.io/solutions/3ziwAtNKUkzORSjELFia">Devchallenge</a> </a><span> | </span>
+                <a href="https://www.figma.com/proto/vfMDJhGGnqfaskO2aud06o/button-component?node-id=0%3A1&scaling=min-zoom&page-id=0%3A1">Figma<a>
             </h3>
         </ul>
     </nav>
