@@ -1,6 +1,6 @@
 import React from "react";
 import PropTypes from "prop-types";
-function Encabezado({ titulo, classCss }) {
+function Encabezado({ children, classCss }) {
 	const arr_estilos = ["titulo_encabezado", classCss];
 	let estilos = "";
 	arr_estilos.forEach(estilo => {
@@ -8,13 +8,13 @@ function Encabezado({ titulo, classCss }) {
 	});
 	return (
 		<section className={estilos}>
-			<h4> {titulo} </h4>
+			{children}
 		</section>
 	);
 }
 
 Encabezado.propTypes = {
-	titulo: PropTypes.string.isRequired,
+	children: PropTypes.element,
 	classCss: PropTypes.string,
 };
 

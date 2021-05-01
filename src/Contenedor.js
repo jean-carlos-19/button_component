@@ -8,7 +8,9 @@ function Contenedor() {
 	return (
 		<>
 			<header className='encabezado'>
-				<Encabezado titulo={"Devchallenges.io"} />
+				<Encabezado> 
+					<h4><span className="rojo">Dev</span>challenges.io</h4>
+				</Encabezado>
 				<Barra_Navegacion_Lateral items={urls} />
 			</header>
 			<div className='contenido'>
