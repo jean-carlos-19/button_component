@@ -85,18 +85,22 @@
      <section>
         <h2> Como usar </h2>
     </section>
-   ```
-     # Clone this repository
-        $ git clone https://github.com/jean-carlos-19/button_component
-    # Install dependencies
-        $ yarn install
-    # Run the app
-        $ yarn start
-    # Run the sass
-        $yarn sass
-    # Run Prettier
-        $yarn prettier
-    ```
+    
+     <section>
+        ```
+             # Clone this repository
+                $ git clone https://github.com/jean-carlos-19/button_component
+            # Install dependencies
+                $ yarn install
+            # Run the app
+                $ yarn start
+            # Run the sass
+                $yarn sass
+            # Run Prettier
+                $yarn prettier
+       ```
+    </section>
+ 
 </section>
 <section >
      <section>
