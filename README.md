@@ -85,12 +85,16 @@
      <section>
         <h2> Como usar </h2>
     </section>
-    <nav>
-        <ul>
-                <li>Github <a href="https://github.com/jean-carlos-19">@jean-carlos-19</a></li>
-                <li>Twitter <a href="https://twitter.com/PiguaveJean">@PiguaveJean</a></li>
-        </ul>
-    </nav>
+    # Clone this repository
+    $ git clone https://github.com/jean-carlos-19/button_component
+    # Install dependencies
+    $ yarn install
+    # Run the app
+    $ yarn start
+    #Run the sass
+    $yarn sass
+    #Run Prettier
+    $yarn prettier
 </section>
 <section >
      <section>
