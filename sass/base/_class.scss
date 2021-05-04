@@ -71,12 +71,52 @@
 .derecha {
 	@include display_flex(row-reverse, space-between, center, nowrap);
 }
+.izquierda {
+	@include display_flex(row, space-between, center, nowrap);
+}
 .foco {
 	font-weight: bolder;
 	font-size: 1.2rem;
 }
-.rojo{
-font-size: inherit;
-	color:#F7542E;
+.rojo {
+	font-size: inherit;
+	color: #f7542e;
 	display: inline-block;
+}
+input[type="text"] , textarea{
+	border-radius: 8px;
+	background-color: white;
+	border: 1px solid #828282;
+	box-shadow: none;
+	padding: 0.5em 1em;
+	outline: none;
+	&:focus{
+		border: none;
+		outline: 1px solid rgb(52, 133, 240);
+	}
+}
+input[type="text"] {
+	
+	&.sin_estilo {
+		border: none;
+	}
+	&.normal {
+		border: 1px solid #828282;
+	}
+	&.hover {
+		border: 1px solid #333333;
+	}
+	&.focus {
+		border: 1px solid #2962ff;
+	}
+	&.error {
+		border: 1px solid #d32f2f;
+	}
+	&.default {
+		border: 1px solid #e0e0e0;
+		background: #f2f2f2;
+	}
+}
+.text_error {
+	color: red;
 }

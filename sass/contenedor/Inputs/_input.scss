@@ -1,0 +1,40 @@
+#input {
+	width: 100%;
+	padding: 0.5rem 1.5rem;
+	.info_boton {
+		width: 100%;
+		@include display_flex(column, flex-start, flex-start, nowrap);
+		* + * {
+			margin-top: 0.5rem;
+		}
+		.input {
+			border-radius: 8px;
+			background-color: white;
+			border: 1px solid #828282;
+			box-shadow: none;
+			padding: 0.5em 1em;
+			outline: none;
+			input[type="text"] {
+				padding: 0;
+			}
+			* + * {
+				margin-top: 0;
+			}
+		}
+	}
+	@media screen and(min-width:600px) {
+		.basico {
+			@include display_flex(row, flex-start, flex-start, nowrap);
+			.info_boton {
+				margin-top: 0;
+				margin-left: calc(10% / 2);
+				flex-basis: 30%;
+			}
+			&.fullwidt {
+				.info_boton {
+					flex-basis: 100%;
+				}
+			}
+		}
+	}
+}

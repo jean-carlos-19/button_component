@@ -12,6 +12,9 @@ function Rutas() {
 						{url.componente}
 					</Route>
 				))}
+				<Route path='*'>
+					<h3>pagina no encontrada</h3>
+				</Route>
 			</Switch>
 		</>
 	);

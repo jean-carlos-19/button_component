@@ -1,5 +1,5 @@
 import React from "react";
-import { Botones } from "../Vistas/Botones";
+import { Botones, Entrada } from "../Vistas";
 const urls = [
 	{
 		nombre: "colors",
@@ -30,6 +30,12 @@ const urls = [
 		direccion: "/grid",
 		exact: true,
 		componente: <h2>grid</h2>,
+	},
+	{
+		nombre: "input",
+		direccion: "/input",
+		exact: true,
+		componente: <Entrada />,
 	},
 ];
 export { urls };

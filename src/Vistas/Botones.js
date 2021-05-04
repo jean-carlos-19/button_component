@@ -13,9 +13,11 @@ function Botones() {
 
 	const { normal, focus, shadow, desabilitado, icono, dimensiones, color, color_hover } = info_boton;
 	return (
-		<section id='buttons'>
+		<section id='botones'>
 			<Configuracion estadoConfiguracion={estadoConfiguracion} />
-			<Encabezado titulo='buttons' classCss='izquierdo' />
+			<Encabezado classCss='izquierdo'>
+				<h3>buttons</h3>
+			</Encabezado>
 			<div className={"fila"}>
 				<Contenedor_Botones botones={normal} />
 				<Contenedor_Botones botones={focus} />

@@ -1,2 +1,297 @@
-@import url(https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap);:root{box-sizing:border-box;font-family:"Noto Sans JP",sans-serif}*,:after,:before{padding:0;margin:0;box-sizing:inherit;font-family:inherit}a{text-decoration:none;color:#000}ul{list-style:none}a,h4,label{text-transform:capitalize}span{font-family:Ubuntu Mono;font-style:normal;font-weight:400;font-size:10px;line-height:12px;color:#333}button{cursor:pointer;border:1px solid transparent;border-radius:6px;padding:.5em 1em;text-transform:capitalize;font-weight:500;display:flex;flex-wrap:nowrap;flex-direction:row;justify-content:center;align-items:center}.normal{background:#e0e0e0;box-shadow:0 2px 3px rgba(51,51,51,.2)}.normal.focus:hover{background-color:#aeaeae}.outline{border:1px solid #3d5afe;color:#3d5afe}.outline.focus:hover{background-color:rgba(41,98,255,.1)}.text{background-color:transparent}.text.focus:hover{color:#3d5afe}.shadow{background:#3d5afe;color:#fff}.default{color:#9e9e9e;background-color:#e0e0e0}.desabilitado{color:#9e9e9e;background-color:transparent}.second{background:#455a64;box-shadow:0 2px 3px rgba(69,90,100,.2);color:#fff}.second.focus:hover{background:#1c313a}.danger{background:#d32f2f;box-shadow:0 2px 3px rgba(211,47,47,.2);color:#fff}.danger.focus:hover{background:#9a0007}.primary.focus:hover{background:#0039cb}.base{width:73px}.medium{width:81px}.largo{width:100px}.fila{flex-direction:row}.derecha,.fila{display:flex;flex-wrap:nowrap;justify-content:space-between;align-items:center}.derecha{flex-direction:row-reverse}.foco{font-weight:bolder;font-size:1.2rem}.rojo{font-size:inherit;color:#f7542e;display:inline-block}#root{width:100%}#root *+*{margin-top:1.5rem}#root .encabezado{width:100%;padding:.5em 1em;background-color:#fafbfd}#root .encabezado .titulo_encabezado{flex-wrap:nowrap}#root .encabezado .barra_lateral ul,#root .encabezado .titulo_encabezado{width:100%;display:flex;flex-direction:row;justify-content:center;align-items:flex-start}#root .encabezado .barra_lateral ul{height:15vh;flex-wrap:wrap}#root .encabezado .barra_lateral ul>li+li{margin-top:0}#root .encabezado .barra_lateral ul li{flex-basis:33%}#root .encabezado .barra_lateral ul li a{padding:.5rem;display:flex;flex-wrap:nowrap;flex-direction:row;justify-content:center;align-items:center}@media screen and (min-width:50rem){#root .encabezado{min-height:100vh}#root .encabezado .barra_lateral ul{display:block}#root .encabezado .barra_lateral ul>li+li{margin-top:2rem}}#root .contenido{width:100%}#root .contenido #buttons{width:100%;padding:.5rem 1.5rem}#root .contenido #buttons .fila{display:flex;flex-wrap:nowrap;flex-direction:row;justify-content:space-between;align-items:flex-start}#root .contenido #buttons .fila>div,#root .contenido #buttons .fila section{margin-top:0}#root .contenido #buttons .fila>div,#root .contenido #buttons .fila>section{flex-basis:45%}#root .contenido #buttons .fila .info_boton{display:flex;flex-wrap:nowrap;flex-direction:column;justify-content:flex-start;align-items:flex-start}#root .contenido #buttons .basico button.end{flex-direction:row-reverse}#root .contenido #buttons .basico button span{color:#fff}#root .contenido #buttons .basico button p{margin-top:0}#root .contenido #buttons .basico .cuatro{display:flex;flex-wrap:wrap;flex-direction:row;justify-content:space-around;align-items:center}#root .contenido #buttons .basico .cuatro .info_boton{flex-basis:20%}#root .contenido #buttons .configuracion{display:block}#root .contenido #buttons .configuracion .estado{flex-basis:40%;padding:.5em;box-shadow:0 -1px 5px 6px rgba(90,90,90,.126);border:none;border-radius:12px}#root .contenido #buttons .configuracion .estado .fila{justify-content:flex-start;align-items:center}#root .contenido #buttons .configuracion .estado .fila input,#root .contenido #buttons .configuracion .estado .fila label{margin-top:0}#root .contenido #buttons .configuracion .estado .fila input{margin-right:1rem;margin-left:.25rem}@media screen and (min-width:50rem){#root .contenido #buttons .configuracion{display:flex;flex-wrap:nowrap;flex-direction:row;justify-content:space-between;align-items:center}#root .contenido #buttons .configuracion div{margin-top:0}}@media screen and (min-width:37.5rem){#root .contenido #buttons .fila.cuatro{flex-wrap:nowrap;justify-content:space-between}}#root .contenido .pie_pagina{padding:2em;display:flex;flex-wrap:nowrap;flex-direction:row;justify-content:center;align-items:center}#root .contenido .pie_pagina span{font-size:1rem}#root .contenido .pie_pagina span a{color:#333}@media screen and (min-width:50rem){#root{display:flex;flex-wrap:nowrap;flex-direction:row;justify-content:flex-start;align-items:stretch}#root .encabezado{flex-basis:25%}#root #buttons{flex-basis:75%}}
+@import url(https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap);
+:root {
+	box-sizing: border-box;
+	font-family: "Noto Sans JP", sans-serif;
+}
+*,
+:after,
+:before {
+	padding: 0;
+	margin: 0;
+	box-sizing: inherit;
+	font-family: inherit;
+}
+a {
+	text-decoration: none;
+	color: #000;
+}
+ul {
+	list-style: none;
+}
+a,
+h4,
+label {
+	text-transform: capitalize;
+}
+span {
+	font-family: Ubuntu Mono;
+	font-style: normal;
+	font-weight: 400;
+	font-size: 10px;
+	line-height: 12px;
+	color: #333;
+}
+button {
+	cursor: pointer;
+	border: 1px solid transparent;
+	border-radius: 6px;
+	padding: 0.5em 1em;
+	text-transform: capitalize;
+	font-weight: 500;
+	display: flex;
+	flex-wrap: nowrap;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+}
+.normal {
+	background: #e0e0e0;
+	box-shadow: 0 2px 3px rgba(51, 51, 51, 0.2);
+}
+.normal.focus:hover {
+	background-color: #aeaeae;
+}
+.outline {
+	border: 1px solid #3d5afe;
+	color: #3d5afe;
+}
+.outline.focus:hover {
+	background-color: rgba(41, 98, 255, 0.1);
+}
+.text {
+	background-color: transparent;
+}
+.text.focus:hover {
+	color: #3d5afe;
+}
+.shadow {
+	background: #3d5afe;
+	color: #fff;
+}
+.default {
+	color: #9e9e9e;
+	background-color: #e0e0e0;
+}
+.desabilitado {
+	color: #9e9e9e;
+	background-color: transparent;
+}
+.second {
+	background: #455a64;
+	box-shadow: 0 2px 3px rgba(69, 90, 100, 0.2);
+	color: #fff;
+}
+.second.focus:hover {
+	background: #1c313a;
+}
+.danger {
+	background: #d32f2f;
+	box-shadow: 0 2px 3px rgba(211, 47, 47, 0.2);
+	color: #fff;
+}
+.danger.focus:hover {
+	background: #9a0007;
+}
+.primary.focus:hover {
+	background: #0039cb;
+}
+.base {
+	width: 73px;
+}
+.medium {
+	width: 81px;
+}
+.largo {
+	width: 100px;
+}
+.fila {
+	flex-direction: row;
+}
+.derecha,
+.fila {
+	display: flex;
+	flex-wrap: nowrap;
+	justify-content: space-between;
+	align-items: center;
+}
+.derecha {
+	flex-direction: row-reverse;
+}
+.foco {
+	font-weight: bolder;
+	font-size: 1.2rem;
+}
+.rojo {
+	font-size: inherit;
+	color: #f7542e;
+	display: inline-block;
+}
+#root {
+	width: 100%;
+}
+#root * + * {
+	margin-top: 1.5rem;
+}
+#root .encabezado {
+	width: 100%;
+	padding: 0.5em 1em;
+	background-color: #fafbfd;
+}
+#root .encabezado .titulo_encabezado {
+	flex-wrap: nowrap;
+}
+#root .encabezado .barra_lateral ul,
+#root .encabezado .titulo_encabezado {
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: flex-start;
+}
+#root .encabezado .barra_lateral ul {
+	height: 15vh;
+	flex-wrap: wrap;
+}
+#root .encabezado .barra_lateral ul > li + li {
+	margin-top: 0;
+}
+#root .encabezado .barra_lateral ul li {
+	flex-basis: 33%;
+}
+#root .encabezado .barra_lateral ul li a {
+	padding: 0.5rem;
+	display: flex;
+	flex-wrap: nowrap;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+}
+@media screen and (min-width: 50rem) {
+	#root .encabezado {
+		min-height: 100vh;
+	}
+	#root .encabezado .barra_lateral ul {
+		display: block;
+	}
+	#root .encabezado .barra_lateral ul > li + li {
+		margin-top: 2rem;
+	}
+}
+#root .contenido {
+	width: 100%;
+}
+#root .contenido #buttons {
+	width: 100%;
+	padding: 0.5rem 1.5rem;
+}
+#root .contenido #buttons .fila {
+	display: flex;
+	flex-wrap: nowrap;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: flex-start;
+}
+#root .contenido #buttons .fila > div,
+#root .contenido #buttons .fila section {
+	margin-top: 0;
+}
+#root .contenido #buttons .fila > div,
+#root .contenido #buttons .fila > section {
+	flex-basis: 45%;
+}
+#root .contenido #buttons .fila .info_boton {
+	display: flex;
+	flex-wrap: nowrap;
+	flex-direction: column;
+	justify-content: flex-start;
+	align-items: flex-start;
+}
+#root .contenido #buttons .basico button.end {
+	flex-direction: row-reverse;
+}
+#root .contenido #buttons .basico button span {
+	color: #fff;
+}
+#root .contenido #buttons .basico button p {
+	margin-top: 0;
+}
+#root .contenido #buttons .basico .cuatro {
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: row;
+	justify-content: space-around;
+	align-items: center;
+}
+#root .contenido #buttons .basico .cuatro .info_boton {
+	flex-basis: 20%;
+}
+#root .contenido #buttons .configuracion {
+	display: block;
+}
+#root .contenido #buttons .configuracion .estado {
+	flex-basis: 40%;
+	padding: 0.5em;
+	box-shadow: 0 -1px 5px 6px rgba(90, 90, 90, 0.126);
+	border: none;
+	border-radius: 12px;
+}
+#root .contenido #buttons .configuracion .estado .fila {
+	justify-content: flex-start;
+	align-items: center;
+}
+#root .contenido #buttons .configuracion .estado .fila input,
+#root .contenido #buttons .configuracion .estado .fila label {
+	margin-top: 0;
+}
+#root .contenido #buttons .configuracion .estado .fila input {
+	margin-right: 1rem;
+	margin-left: 0.25rem;
+}
+@media screen and (min-width: 50rem) {
+	#root .contenido #buttons .configuracion {
+		display: flex;
+		flex-wrap: nowrap;
+		flex-direction: row;
+		justify-content: space-between;
+		align-items: center;
+	}
+	#root .contenido #buttons .configuracion div {
+		margin-top: 0;
+	}
+}
+@media screen and (min-width: 37.5rem) {
+	#root .contenido #buttons .fila.cuatro {
+		flex-wrap: nowrap;
+		justify-content: space-between;
+	}
+}
+#root .contenido .pie_pagina {
+	padding: 2em;
+	display: flex;
+	flex-wrap: nowrap;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+}
+#root .contenido .pie_pagina span {
+	font-size: 1rem;
+}
+#root .contenido .pie_pagina span a {
+	color: #333;
+}
+@media screen and (min-width: 50rem) {
+	#root {
+		display: flex;
+		flex-wrap: nowrap;
+		flex-direction: row;
+		justify-content: flex-start;
+		align-items: stretch;
+	}
+	#root .encabezado {
+		flex-basis: 25%;
+	}
+	#root #buttons {
+		flex-basis: 75%;
+	}
+}
 /*# sourceMappingURL=main.4c0d5d11.chunk.css.map */

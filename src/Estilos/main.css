@@ -20,7 +20,7 @@ ul {
 
 a,
 h4,
-label {
+h3 label {
   text-transform: capitalize; }
 
 span {
@@ -43,6 +43,18 @@ button {
   flex-direction: row;
   justify-content: center;
   align-items: center; }
+
+label {
+  text-transform: capitalize; }
+
+div {
+  width: 100%; }
+
+textarea {
+  display: block; }
+
+input[type="text"] {
+  width: 100%; }
 
 .normal {
   background: #e0e0e0;
@@ -113,14 +125,54 @@ button {
   justify-content: space-between;
   align-items: center; }
 
+.izquierda {
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center; }
+
 .foco {
   font-weight: bolder;
   font-size: 1.2rem; }
 
 .rojo {
   font-size: inherit;
-  color: #F7542E;
+  color: #f7542e;
   display: inline-block; }
+
+input[type="text"], textarea {
+  border-radius: 8px;
+  background-color: white;
+  border: 1px solid #828282;
+  box-shadow: none;
+  padding: 0.5em 1em;
+  outline: none; }
+  input[type="text"]:focus, textarea:focus {
+    border: none;
+    outline: 1px solid #3485f0; }
+
+input[type="text"].sin_estilo {
+  border: none; }
+
+input[type="text"].normal {
+  border: 1px solid #828282; }
+
+input[type="text"].hover {
+  border: 1px solid #333333; }
+
+input[type="text"].focus {
+  border: 1px solid #2962ff; }
+
+input[type="text"].error {
+  border: 1px solid #d32f2f; }
+
+input[type="text"].default {
+  border: 1px solid #e0e0e0;
+  background: #f2f2f2; }
+
+.text_error {
+  color: red; }
 
 #root {
   width: 100%; }
@@ -165,71 +217,107 @@ button {
             margin-top: 2rem; } }
   #root .contenido {
     width: 100%; }
-    #root .contenido #buttons {
+    #root .contenido #botones {
       width: 100%;
       padding: 0.5rem 1.5rem; }
-      #root .contenido #buttons .fila {
+      #root .contenido #botones .fila {
         display: flex;
         flex-wrap: nowrap;
         flex-direction: row;
         justify-content: space-between;
         align-items: flex-start; }
-        #root .contenido #buttons .fila section,
-        #root .contenido #buttons .fila > div {
+        #root .contenido #botones .fila section,
+        #root .contenido #botones .fila > div {
           margin-top: 0; }
-        #root .contenido #buttons .fila > section,
-        #root .contenido #buttons .fila > div {
+        #root .contenido #botones .fila > section,
+        #root .contenido #botones .fila > div {
           flex-basis: 45%; }
-        #root .contenido #buttons .fila .info_boton {
+        #root .contenido #botones .fila .info_boton {
           display: flex;
           flex-wrap: nowrap;
           flex-direction: column;
           justify-content: flex-start;
           align-items: flex-start; }
-      #root .contenido #buttons .basico button.end {
+      #root .contenido #botones .basico button.end {
         flex-direction: row-reverse; }
-      #root .contenido #buttons .basico button span {
+      #root .contenido #botones .basico button span {
         color: white; }
-      #root .contenido #buttons .basico button p {
+      #root .contenido #botones .basico button p {
         margin-top: 0; }
-      #root .contenido #buttons .basico .cuatro {
+      #root .contenido #botones .basico .cuatro {
         display: flex;
         flex-wrap: wrap;
         flex-direction: row;
         justify-content: space-around;
         align-items: center; }
-        #root .contenido #buttons .basico .cuatro .info_boton {
+        #root .contenido #botones .basico .cuatro .info_boton {
           flex-basis: 20%; }
-      #root .contenido #buttons .configuracion {
+      #root .contenido #botones .configuracion {
         display: block; }
-        #root .contenido #buttons .configuracion .estado {
+        #root .contenido #botones .configuracion .estado {
           flex-basis: 40%;
           padding: 0.5em;
           box-shadow: 0px -1px 5px 6px rgba(90, 90, 90, 0.126);
           border: none;
           border-radius: 12px; }
-          #root .contenido #buttons .configuracion .estado .fila {
+          #root .contenido #botones .configuracion .estado .fila {
             justify-content: flex-start;
             align-items: center; }
-            #root .contenido #buttons .configuracion .estado .fila label,
-            #root .contenido #buttons .configuracion .estado .fila input {
+            #root .contenido #botones .configuracion .estado .fila label,
+            #root .contenido #botones .configuracion .estado .fila input {
               margin-top: 0; }
-            #root .contenido #buttons .configuracion .estado .fila input {
+            #root .contenido #botones .configuracion .estado .fila input {
               margin-right: 1rem;
               margin-left: 0.25rem; }
         @media screen and (min-width: 50rem) {
-          #root .contenido #buttons .configuracion {
+          #root .contenido #botones .configuracion {
             display: flex;
             flex-wrap: nowrap;
             flex-direction: row;
             justify-content: space-between;
             align-items: center; }
-            #root .contenido #buttons .configuracion div {
+            #root .contenido #botones .configuracion div {
               margin-top: 0; } }
       @media screen and (min-width: 37.5rem) {
-        #root .contenido #buttons .fila.cuatro {
+        #root .contenido #botones .fila.cuatro {
           flex-wrap: nowrap;
           justify-content: space-between; } }
+    #root .contenido #input {
+      width: 100%;
+      padding: 0.5rem 1.5rem; }
+      #root .contenido #input .info_boton {
+        width: 100%;
+        display: flex;
+        flex-wrap: nowrap;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start; }
+        #root .contenido #input .info_boton * + * {
+          margin-top: 0.5rem; }
+        #root .contenido #input .info_boton .input {
+          border-radius: 8px;
+          background-color: white;
+          border: 1px solid #828282;
+          box-shadow: none;
+          padding: 0.5em 1em;
+          outline: none; }
+          #root .contenido #input .info_boton .input input[type="text"] {
+            padding: 0; }
+          #root .contenido #input .info_boton .input * + * {
+            margin-top: 0; }
+      @media screen and (min-width: 600px) {
+        #root .contenido #input .basico {
+          display: flex;
+          flex-wrap: nowrap;
+          flex-direction: row;
+          justify-content: flex-start;
+          align-items: flex-start; }
+          #root .contenido #input .basico .info_boton {
+            margin-top: 0;
+            margin-left: calc(10% / 2);
+            flex-basis: 30%; }
+          #root .contenido #input .basico.fullwidt .info_boton {
+            flex-basis: 100%; } }
     #root .contenido .pie_pagina {
       padding: 2em;
       display: flex;

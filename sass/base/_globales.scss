@@ -20,7 +20,7 @@ ul {
 }
 a,
 h4,
-label {
+h3 label {
 	text-transform: capitalize;
 }
 span {
@@ -39,4 +39,16 @@ button {
 	text-transform: capitalize;
 	font-weight: 500;
 	@include display_flex(row, center, center, nowrap);
+}
+label {
+	text-transform: capitalize;
+}
+div {
+	width: 100%;
+}
+textarea{
+	display: block;
+}
+input[type="text"] {
+	width: 100%;
 }

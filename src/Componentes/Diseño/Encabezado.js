@@ -6,11 +6,7 @@ function Encabezado({ children, classCss }) {
 	arr_estilos.forEach(estilo => {
 		if (!estilos) estilos = `${estilos} ${estilo}`;
 	});
-	return (
-		<section className={estilos}>
-			{children}
-		</section>
-	);
+	return <section className={estilos}>{children}</section>;
 }
 
 Encabezado.propTypes = {
