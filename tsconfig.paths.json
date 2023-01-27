@@ -1,0 +1,13 @@
+{
+    "compilerOptions": {
+        "baseUrl": ".",
+        "paths": {
+            "@elementos": ["./src/atom/01.elementos"],
+            "@componentes": ["./src/atom/02.componentes"],
+            "@disenos": ["./src/atom/03.diseños"],
+            "@vistas": ["./src/atom/04.vistas"],
+            "@data": ["./src/atom/data"],
+            "@atom": ["./src/atom/App.tsx"],
+        }
+    }
+}
